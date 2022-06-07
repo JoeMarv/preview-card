@@ -1,0 +1,161 @@
+/*for mobile view*/
+
+body {
+    background-color:hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: outfit;
+    height: auto;
+    width:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 100vw;
+    height: auto;
+    margin: 5vw;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.nft img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.nft:hover .overlay{
+    opacity: 30%;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.overlay {
+    position: absolute;
+    width: 75.5vw;
+    height:75.5vw;
+    background-color: hsl(178, 50%, 20%);
+    border-radius: 5%;
+    opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s ease;
+}
+
+.nft .overlay img {
+    width: 30%;
+    align-items: center;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    display:flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.text {
+    color:hsl(215, 51%, 70%);
+    font-weight:300;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price span {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.time span {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1em;
+    padding-bottom: 1vw;
+}
+
+.line {
+    background-color: hsl(215, 51%, 70%);
+    height: 0.3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    display:flex;
+    font-size: 1em;
+    justify-content: left;
+}
+
+.author img{
+    height: auto;
+    width: 15vw;
+    border: .5vw solid white;
+    border-radius: 50%;
+}
+
+.creation {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-left: 5vw;
+    padding-top: 3.5vw
+}
+
+.Jules {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    padding-left: 1vw;
+    padding-top: 3.5vw;
+}
+
+.Jules:hover, .heading:hover {
+    color: hsl(178, 100%, 40%);
+    opacity: 70%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+/*for desktop view*/
+@media (min-width:769px) {
+
+    .card {
+        width: 40vw;
+        justify-content: center;
+    }
+
+    .nft {
+
+    }
+
+    .nft .overlay {
+        width: 40vw;
+        height: 46%;
+    }
+
+    .author img {
+        width: 5vw;
+        height: auto
+    }
+    
+    .creation {
+        padding-top: 1vw;
+    }
+
+    .Jules {
+        padding-top: 1vw;
+    }
+}

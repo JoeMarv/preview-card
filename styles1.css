@@ -1,0 +1,126 @@
+body {
+    background-color:hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: outfit;
+    height: auto;
+    width:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 80vw;
+    height: auto;
+    margin: 5vw;
+    border: 5vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border radius: 5%;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: hsl(178, 100%, 50%);
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    transform: scale(0);
+    opacity: 30%;
+    transition: .1s ease;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column
+
+}
+
+.over image {
+    align-items: center;
+    transform: scale(1);
+    color: solid white;
+}
+
+.container:hover .overlay {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+h2 {
+    font-family: outfit;
+    color: hsl(0, 0%, 1000%);
+    display:flex;
+    flex-direction: column;
+}
+
+h2:hover, #one:hover {
+    color: hsl(178, 100%, 50%);
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    font-family: outfit;
+}
+
+.one {
+    font-family: outfit;
+    color:hsl(215, 51%, 70%);
+}
+
+.two {
+    font-family: outfit;
+    color: hsl(178, 100%, 50%)
+}
+
+
+
+
+#one {
+    font-family: outfit;
+    color: hsl(0, 0%, 1000%)
+}
+ 
+#two {
+    font-family: outfit;
+    color:hsl(215, 51%, 70%);
+    text-align: right;
+}
+
+#pfp {
+    height: 48px;
+    width: 48px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+
+
+@media screen (min-width:375px) {
+
+}
+
+@media screen (max-width: 1440px) {
+}
+
