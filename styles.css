@@ -1,0 +1,291 @@
+/*for mobile view*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color:hsl(217, 54%, 13%);
+    font-size: 18px;
+    font-family: outfit;
+    height: 100vh;
+    width: auto;
+    display :flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 76vw;
+    height: auto;
+    display: flex;
+    padding: 6vw;
+    flex-direction: column;
+    border-radius: 6vw;
+    box-shadow: 4vw 8vw 4vw hsl(217, 54%, 11%);
+}
+
+.nft img {
+    width: 76vw;
+    height: 76vw;
+    width: 76vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+}
+
+.nft:hover .overlay{
+    opacity: 30%;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.overlay {
+    position: absolute;
+    width: 76vw;
+    height: 76vw;
+    background-color: hsl(178, 50%, 20%);
+    border-radius: 2vw;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+}
+
+.nft .overlay img {
+    width: 20vw;
+    height: auto;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    margin: 4vw 0vw;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 2vw 0vw;
+}
+
+.text {
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin: 1vw 0vw;
+}
+
+.price-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 0vw 4vw 0vw;
+    border-bottom: 1px solid hsl(215, 51%, 50%)
+}
+
+.price-time img{
+    width: auto;
+    height: auto;
+}
+
+.price, .time {
+    display: flex;
+    flex-direction: row;
+}
+
+.price span {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 0.9em;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+.time span {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+.author {
+    display:flex;
+    font-size: 0.9em;
+    justify-content: left;
+    margin: 4vw 0vw 0vw 0vw;
+    align-items: center;
+}
+
+.author img{
+    height: auto;
+    width: 10vw;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.author-writing {
+    display: flex;
+    margin: 0vw 0vw 0vw 4vw;
+}
+
+.creation {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.Jules {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+.Jules:hover, .heading:hover {
+    color: hsl(178, 100%, 40%);
+    opacity: 70%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+/*for tablet view*/
+@media (min-width:768px) {
+.card {
+    width: 36vw;
+    padding: 3vw;
+    border-radius: 3vw;
+    box-shadow: 2vw 4vw 2vw hsl(217, 54%, 11%);
+}
+
+.nft img {
+    width: 36vw;
+    height: 36vw;
+    border-radius: 1vw;
+}
+
+.overlay {
+    width: 36vw;
+    height: 36vw;
+    border-radius: 1vw;
+}
+
+.nft .overlay img {
+    width: 10vw;
+}
+
+.main-text {
+    margin: 2vw 0vw;
+}
+
+.heading {
+    font-size: 1.2em;
+    margin: 1vw 0vw;
+}
+
+.text {
+    font-size: 0.9em;
+    margin: 1vw 0vw;
+}
+
+.price-time{
+    padding: 0vw 0vw 2vw 0vw;
+}
+
+.price span {
+    font-size: 0.9em;
+    margin: 0vw 0vw 0vw 1vw;
+}
+
+.time span {
+    font-size: 0.9em;
+    margin: 0vw 0vw 0vw 1vw;
+}
+
+.author {
+    font-size: 0.9em;
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+.author img{
+    width: 5vw;
+}
+
+.author-writing {
+    margin: 0vw 0vw 0vw 2vw;
+}
+}
+
+/*for tablet view*/
+@media (min-width:1440px) {
+    .card {
+        width: 30vw;
+        padding: 2.5vw;
+        border-radius: 2.5vw;
+        box-shadow: 2.5vw 5vw 2.5vw hsl(217, 54%, 11%);
+    }
+
+    .nft img {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 0.75vw;
+    }
+
+    .overlay {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 0.75vw;
+    }
+
+    .nft .overlay img {
+        width: 8vw;
+    }
+
+    .main-text {
+        margin: 1.5vw 0vw;
+    }
+
+    .heading {
+        font-size: 1.8em;
+        margin: 1vw 0vw;
+    }
+
+    .text {
+        font-size: 1.3em;
+        margin: 1vw 0vw;
+    }
+
+    .price-time {
+        padding: 0vw 0vw 2.5vw 0vw;
+    }
+
+    .price span {
+        font-size: 1.3em;
+        margin: 0vw 0vw 0vw 1vw;
+    }
+
+    .time span {
+        font-size: 1.3em;
+        margin: 0vw 0vw 0vw 1vw;
+    }
+
+    .author {
+        font-size: 0.9em;
+        margin: 2vw 0vw 0vw 0vw;
+    }
+
+    .author img {
+        width: 5vw;
+    }
+
+    .author-writing {
+        margin: 0vw 0vw 0vw 2vw;
+        font-size: 1.3rem
+    }
+}
